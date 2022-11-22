@@ -5,6 +5,8 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Navbar Section CSS */
+
 .hero__section {
     background-image: url(./images/heroSectionBackground.png);
     min-height: 60vh;
@@ -90,13 +92,6 @@
 
 
 
-
-
-
-
-
-
-
 @media only screen and (max-width:500px) {
     .navbar__menu_container .user__icon {
         display: flex;
@@ -138,6 +133,8 @@
     }
 }
 
+/* We offer card CSS */
+
 .container__we_offer {
     margin: 3rem auto;
     width: 90%;
@@ -150,7 +147,7 @@
 
 .we__offer_card {
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     overflow: hidden;
     border: 1px solid gray;
     transition: all 0.4s ease;
@@ -183,7 +180,9 @@
 
 }
 
-.collections h1 {
+/* Collections CSS */
+
+/* .collections h1 {
     font-weight: 500;
     margin-left: 10%;
 }
@@ -251,7 +250,7 @@
         rgba(0, 0 ,0, 0.05) 85%
         /* rgba(0, 0, 0, 0)100% */
 
-    );
+    /* );
     z-index: 5;
 }
 
@@ -268,8 +267,9 @@
 .content h4{
     font-weight: 400;
     letter-spacing: 0.5px;
-}
+} */ 
 
+/* Get the app CSS */
 
 .get__the_app{
     display: flex;
@@ -413,6 +413,161 @@
         flex-direction: column;
     }
 }
+
+/* Popular Locations CSS */
+
+.localities {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.localities p:nth-child(1) {
+    font-size: 2rem;
+    margin: 50px auto 30px 7.5%;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.places {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.place {
+    display: flex;
+    gap: 1rem;
+    padding: 20px 15px 20px 20px;
+    cursor: pointer;
+}
+
+.localities_content {
+    display: flex;
+    flex-grow: 1;
+    width: 100px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(232, 228, 228);
+}
+.localities_content h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.localities_content p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: gray;
+}
+.localities button{
+    border: 1px solid black;
+}
+.place button {
+    border: initial;
+    cursor: pointer;
+    background-color: white;
+}
+
+@media only screen and (max-width:2440px) {
+    .place {
+        width: 33%;
+    }
+    .places {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .place {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .place {
+        width: 100%;
+    }
+}
+
+/* Otions Near me CSS */
+
+.options {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.option_container {
+    margin-left: 10px;
+    width: 100%;
+}
+.options p:nth-child(1) {
+    font-size: 62%;
+    margin: 50px auto 30px 7.5%;
+    line-height: 1.2;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+.options_near_me {
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.option {
+    display: flex;
+    gap: 1rem;
+    padding: 20px 15px 20px 20px;
+    cursor: pointer;
+}
+.option_content {
+    height: 60px;
+    display: flex;
+    flex-grow: 1;
+    /* width: 100px; */
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(232, 228, 228);
+}
+.option_content h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.option button {
+    border: 1px solid black;
+}
+.option button {
+    border: initial;
+    cursor: pointer;
+    background-color: white;
+}
+
+@media only screen and (max-width:2440px) {
+    .option {
+        width: 33%;
+    }
+    .options_near_me {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:900px) {
+    .option {
+        width: 50%;
+    }    
+}
+@media only screen and (max-width:700px) {
+    .option {
+        width: 100%;
+    }
+    
+}
+
+
+/* Footer CSS */
 
 .footer {   
     width: 100%;
